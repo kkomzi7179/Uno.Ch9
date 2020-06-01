@@ -246,8 +246,24 @@
 		<Setter Property="Data"
 				Value="M13 0c7.18 0 13 5.82 13 13s-5.82 13-13 13S0 20.18 0 13 5.82 0 13 0zm0 2C6.925 2 2 6.925 2 13s4.925 11 11 11 11-4.925 11-11S19.075 2 13 2zm0 9.286c.891 0 1.623.637 1.706 1.452l.008.155v5.357c0 .888-.767 1.607-1.714 1.607-.891 0-1.623-.637-1.706-1.452l-.008-.155v-5.357c0-.888.767-1.607 1.714-1.607zM13.006 6c.943 0 1.708.768 1.708 1.714 0 .891-.677 1.624-1.544 1.707l-.176.008c-.943 0-1.708-.768-1.708-1.715 0-.89.677-1.623 1.544-1.706L13.006 6z" />
 	</Style>
-	
-	<!-- Close Icon Path -->
+
+	<!-- Feedback Icon Path Temporary waiting design path -->
+    <Style x:Key="FeedBackIconPath"
+           TargetType="Path"
+           BasedOn="{StaticResource DefaultIconPath}">
+
+        <Setter Property="Width"
+                Value="26" />
+        <Setter Property="Height"
+                Value="26" />
+
+        <Setter Property="Fill"
+                Value="{ThemeResource Color01Brush}" />
+        <Setter Property="Data"
+                Value="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17l-.59.59-.58.58V4h16v12zm-9-4h2v2h-2zm0-6h2v4h-2z" />
+    </Style>
+
+    <!-- Close Icon Path -->
 	<Style x:Key="CloseIconPath"
 		   TargetType="Path"
 		   BasedOn="{StaticResource DefaultIconPath}">

@@ -1,4 +1,5 @@
-﻿using Ch9.ViewModels;
+﻿using System;
+using Ch9.ViewModels;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using System.Linq;
@@ -38,7 +39,9 @@ namespace Ch9
 			});
 
 			ReloadPage = new RelayCommand(LoadPosts);
-		}
+
+            SendFeedBack = new RelayCommand(() => Launcher.OpenAsync(new Uri($"mailto:contact@unoplatform.com")));
+        }
 
 		public ICommand ShowPost { get; }
 
@@ -49,6 +52,8 @@ namespace Ch9
 		public ICommand ReloadPage { get; }
 
 		public ICommand SharePost { get; }
+
+		public ICommand SendFeedBack { get; }
 
 		private PostViewModel _selectedPost;
 		public PostViewModel SelectedPost

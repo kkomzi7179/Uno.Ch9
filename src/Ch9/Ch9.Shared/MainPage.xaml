@@ -187,7 +187,13 @@
 						  Fill="{ThemeResource CommandBarForegroundBrush}"
 						  VerticalAlignment="Center" />
 				</AppBarButton>
-			</CommandBar.PrimaryCommands>
+                <AppBarButton Command="{Binding SendFeedBack}"
+                              android:Margin="0,0,16,0">
+                    <Path Style="{StaticResource FeedBackIconPath}"
+                          Fill="{ThemeResource CommandBarForegroundBrush}"
+                          VerticalAlignment="Center" />
+                </AppBarButton>
+            </CommandBar.PrimaryCommands>
 		</CommandBar>
 
 		<!-- Post List -->
