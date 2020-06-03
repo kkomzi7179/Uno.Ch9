@@ -237,7 +237,9 @@
 				<!-- Loading -->
 				<Grid Visibility="{Binding EpisodesList.Episodes.IsExecuting, Converter={StaticResource TrueToVisible}, FallbackValue=Collapsed}"
 					  Grid.Row="1"
-					  Grid.RowSpan="2">
+					  Grid.RowSpan="2"
+					  Grid.Column="0"
+                      Grid.ColumnSpan="2">
 					<StackPanel VerticalAlignment="Center"
 								HorizontalAlignment="Center">
 
